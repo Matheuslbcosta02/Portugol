@@ -3,27 +3,31 @@ programa {
     real real_brasileiro = 0, dolar_americano = 0, cotacao = 0
     inteiro numero = 0
 
-    escreva("Seja bem vindo ao conversor de moedas. *Importante* : sempre separe os n˙meros com ponto (.) N√O use vÌrgula (,)\n\n")
-    escreva ("Ol· vocÍ gostaria de fazer qual convers„o? Digite 1 para fazer a convers„o REAL-DOLAR, ou digite 2 para fazer a convers„o DOLAR-REAL .\n")
+    escreva("Seja bem vindo ao conversor de moedas. *Importante* : sempre separe os n√∫meros com ponto (.) N√ÉO use v√≠rgula (,)\n\n")
+    escreva ("Ol√° voc√™ gostaria de fazer qual convers√£o? Digite 1 para fazer a convers√£o REAL-DOLAR, ou digite 2 para fazer a convers√£o DOLAR-REAL .\n")
     leia(numero)
 
     escolha(numero){
       caso 1:
         escreva("Digite o valor em reais que gostaria de converter para o dolar americano:\n")
         leia(real_brasileiro)
-        escreva("Agora digite o valor da cotaÁ„o entre REAL-DOLAR:\n")
+        escreva("Agora digite o valor da cota√ß√£o entre REAL-DOLAR:\n")
         leia(cotacao)
         dolar_americano = real_brasileiro * cotacao
-        escreva("O valor em dolar americano È: ", dolar_americano, " .")
+        escreva("O valor em dolar americano √©: ", dolar_americano, " .")
         pare
 
       caso 2:
         escreva("Digite o valor em dolar que gostaria de converter para o real brasileiro:\n")
         leia(dolar_americano)
-        escreva("Agora digite o valor da cotaÁ„o entre DOLAR-REAL:\n")
+        escreva("Agora digite o valor da cota√ß√£o entre DOLAR-REAL:\n")
         leia(cotacao)
         real_brasileiro = dolar_americano * cotacao
-        escreva("O valor em real brasileiro È: ", real_brasileiro," .")
+        escreva("O valor em real brasileiro √©: ", real_brasileiro," .")
+        pare
+
+      caso contrario:
+        escreva("Valor inv√°lido")
         pare
     }
 
