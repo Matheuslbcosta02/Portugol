@@ -3,28 +3,28 @@ programa {
     real celsius = 0 , fahrenheit = 0
     cadeia controle = ""
 
-    escreva ("Olá vamos converter o valor da temperatura entre celsius e fahrenheit.\n\n")
-    escreva ("Qual temperatura você gostaria de descobrir? Celsius ou Fahrenheit?\n")
+    escreva ("OlÃ¡ vamos converter o valor da temperatura entre celsius e fahrenheit.\n\n")
+    escreva ("Qual temperatura vocÃª gostaria de descobrir? Celsius ou Fahrenheit? (digite a palavra com todas as letras minÃºsculas)\n")
     leia (controle)
 
     se (controle == "celsius")
     {
-      escreva ("digite o valor em Fahrenheit que você quer descobrir em Celsius.\n")
+      escreva ("digite o valor em Fahrenheit que vocÃª quer descobrir em Celsius.\n")
       leia (fahrenheit)
       celsius = (fahrenheit-32)/1.8
-      escreva ("O valor dessa temperatura em celsius é ",celsius," °C")
+      escreva ("O valor dessa temperatura em celsius Ã© ",celsius," Â°C")
     }
     senao se (controle == "fahrenheit")
     {
-      escreva ("digite o valor em celsius que você quer descobrir em fahrenheits.\n")
+      escreva ("digite o valor em celsius que vocÃª quer descobrir em fahrenheits.\n")
       leia (celsius)
       fahrenheit = (celsius*1.8) + 32
-      escreva ("O valor dessa temperatura em fahrenheits é ",fahrenheit," °F")
+      escreva ("O valor dessa temperatura em fahrenheits Ã© ",fahrenheit," Â°F")
 
     }
     senao 
     {
-      escreva ("\n Resposta é inválida!")
+      escreva ("\n Resposta Ã© invÃ¡lida!")
     }
 
 
