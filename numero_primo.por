@@ -21,6 +21,9 @@ programa {
     senao se(verificador==2){
       escreva("Esse número é primo!\n")
     }
+    senao se(verificador==1){
+      escreva("Número 1 não é considerado primo!"\n)
+    }
 
 
   }
