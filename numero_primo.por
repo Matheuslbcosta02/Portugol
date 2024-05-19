@@ -3,9 +3,9 @@ programa {
 
     inteiro candidato = 0, resto = 0, verificador = 0
 
-    escreva("Olá vamos verificar se um número é primo ou não.\n")
-    escreva("Lembre-se que um número primo é aquele número que é divisível apenas por 1 e por ele mesmo.\n")
-    escreva("Insira um número para verificarmos se ele é primo ou não: ") 
+    escreva("OlÃ¡ vamos verificar se um nÃºmero Ã© primo ou nÃ£o.\n")
+    escreva("Lembre-se que um nÃºmero primo Ã© aquele nÃºmero que Ã© divisÃ­vel apenas por 1 e por ele mesmo.\n")
+    escreva("Insira um nÃºmero para verificarmos se ele Ã© primo ou nÃ£o: ") 
     leia(candidato)
 
     para(inteiro contador=1; contador<=candidato; contador++){
@@ -16,10 +16,10 @@ programa {
     }
 
     se(verificador > 2){
-      escreva("Esse número NÃO é primo!\n")
+      escreva("Esse nÃºmero NÃƒO Ã© primo!\n")
     }
-    senao{
-      escreva("Esse número é primo!\n")
+    senao se(verificador==2){
+      escreva("Esse nÃºmero Ã© primo!\n")
     }
 
 
