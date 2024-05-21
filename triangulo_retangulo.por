@@ -4,19 +4,25 @@ programa {
 
     real hipotenusa = 0, cateto1 = 0, cateto2= 0
     logico resposta
-    escreva("Ol· vamos descobrir se o seu tri‚ngulo È um tri‚ngulo ret‚ngulo! Digite o maior valor que vocÍ tem primeiramente: ")
+    escreva("Ol√° vamos descobrir se o seu tri√¢ngulo √© um tri√¢ngulo ret√¢ngulo! Digite o maior valor que voc√™ tem primeiramente: ")
     leia(hipotenusa)
     escreva("\n Agora digite os outros dois valores: \n")
     leia(cateto1, cateto2)
 
     resposta = triangulo (hipotenusa,cateto1,cateto2)
 
-    se(resposta == verdadeiro){
-      escreva("O seu tri‚ngulo È um tri‚ngulo ret‚ngulo!")
+    se(hipotenusa>=cateto1 e hipotenusa>=cateto2){
+      se(resposta == verdadeiro){
+      escreva("O seu tri√¢ngulo √© um tri√¢ngulo ret√¢ngulo!")
     } 
     senao{
-      escreva("O seu tri‚ngulo N√O È um tri‚ngulo ret‚ngulo.")
+      escreva("O seu tri√¢ngulo N√ÉO √© um tri√¢ngulo ret√¢ngulo.")
     }
+    }
+    senao{
+      escreva("Voc√™ digitou os valores na ordem errada. Por gentileza, primeiramente digite o maior valor que voc√™ tem!\n")
+    }
+
     
   }
   
