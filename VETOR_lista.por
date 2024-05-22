@@ -3,7 +3,7 @@ programa {
   funcao inicio() {
 
     cadeia nomes [100], resposta
-    inteiro contador = 0, tamanholista, pessoas = 0
+    inteiro contador = 0, tamanholista
 
     para(inteiro i = 0; i<100 ; i++){
       nomes[i]="VAZIO"
@@ -20,8 +20,8 @@ programa {
       leia(resposta)
     }
     tamanholista = u.numero_elementos(nomes)
-    pessoas = contador+1
-    escreva("Lista finalizada, ela possui, ",tamanholista," linhas, além de ter ", pessoas," pessoas.\n")
+    
+    escreva("Lista finalizada, ela possui, ",tamanholista," linhas, além de ter ", contador," pessoas.\n")
     para(inteiro i = 0; i<100; i++){
       escreva(nomes[i],"\n")
     }
