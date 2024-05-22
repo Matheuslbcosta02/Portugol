@@ -1,5 +1,16 @@
 programa {
   inclua biblioteca Matematica --> mat
+
+  funcao logico triangulo(real a,real b, real c){
+    real A,B,C
+   A = mat.potencia(a,2)
+   B = mat.potencia(b,2)
+   C = mat.potencia(c,2)
+   logico teste = (A == B + C)
+   retorne teste
+
+  }
+
   funcao inicio() {
 
     real hipotenusa = 0, cateto1 = 0, cateto2= 0
@@ -25,14 +36,5 @@ programa {
 
     
   }
-  
-  funcao logico triangulo(real a,real b, real c){
-    real A,B,C
-   A = mat.potencia(a,2)
-   B = mat.potencia(b,2)
-   C = mat.potencia(c,2)
-   logico teste = (A == B + C)
-   retorne teste
 
-  }
 }
