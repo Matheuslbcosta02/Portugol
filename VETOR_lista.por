@@ -21,7 +21,7 @@ programa {
     }
     tamanholista = u.numero_elementos(nomes)
     
-    escreva("Lista finalizada, ela possui, ",tamanholista," linhas, além de ter ", contador," pessoas.\n")
+    escreva("\n\nLista finalizada, ela possui, ",tamanholista," linhas, além de ter ", contador," pessoas.\n")
     para(inteiro i = 0; i<100; i++){
       escreva(nomes[i],"\n")
     }
