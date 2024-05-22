@@ -3,24 +3,25 @@ programa {
   funcao inicio() {
 
     cadeia nomes [100], resposta
-    inteiro contador = 0, tamanholista
+    inteiro contador = 0, tamanholista, pessoas = 0
 
     para(inteiro i = 0; i<100 ; i++){
       nomes[i]="VAZIO"
     }
 
-    escreva("Você quer adicionar nomes na lista? (Digite s) para sim ou (digite n) para não: ")
+    escreva("VocÃª quer adicionar nomes na lista? (Digite s) para sim ou (digite n) para nÃ£o: ")
     leia(resposta)
 
     enquanto((resposta=="S")ou (resposta=="s")){
       escreva("Adicione um nome:\n")
       leia(nomes[contador])
       contador = contador + 1
-      escreva("Quer seguir adicionando mais nomes? (Digite s) para sim ou (Digite n) para não: ")
+      escreva("Quer seguir adicionando mais nomes? (Digite s) para sim ou (Digite n) para nÃ£o: ")
       leia(resposta)
     }
     tamanholista = u.numero_elementos(nomes)
-    escreva("Lista finalizada, ela possui, ",tamanholista," linhas. \n")
+    pessoas = contador+1
+    escreva("Lista finalizada, ela possui, ",tamanholista," linhas, alÃ©m de ter ", pessoas," pessoas.\n")
     para(inteiro i = 0; i<100; i++){
       escreva(nomes[i],"\n")
     }
