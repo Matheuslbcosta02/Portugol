@@ -17,7 +17,7 @@ programa {
       }
     }
 
-    escreva("Nós temos essas matrizes por enquanto:\n")
+    escreva("NÃ³s temos essas matrizes por enquanto:\n")
     para(inteiro i=0;i<2;i++){
       para(inteiro j=0;j<2;j++){
         escreva("[",matriz1[i][j],"]")
@@ -41,7 +41,7 @@ programa {
 
     escreva("\n\n")
 
-    escreva("A soma dessas matrizes é representa por essas matriz soma:\n")
+    escreva("A soma dessas matrizes Ã© representada por essa matriz soma:\n")
     para(inteiro i=0;i<2;i++){
       para(inteiro j=0;j<2;j++){
         escreva("[",matriz_soma[i][j],"]")
